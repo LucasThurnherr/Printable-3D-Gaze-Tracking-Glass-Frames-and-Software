@@ -50,6 +50,7 @@ install the following three libraries:
   Make sure OpenCV, Boost, GStreamer, and RealSense SDK 2.0 are all inserted into your Environment variables and PATHS, as seen here: (Example seen in "Pics\install\GStreamerPath.png" and "Pics\install\PathExample.png")
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/PathExample.png" width="400px" />
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/GStreamerPath.png" width="400px" />
+
   To setup your own Visual Studio project, you need to use [CMake](https://cmake.org/). You can find a windows installer [here](https://cmake.org/download/).
  
 ## How to compile
