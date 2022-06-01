@@ -48,6 +48,7 @@ install the following three libraries:
   * After installation, build the RealSense SDK for debug and release (x64)
 
   Make sure OpenCV, Boost, GStreamer, and RealSense SDK 2.0 are all inserted into your Environment variables and PATHS, as seen here:
+
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/PathExample.png" width="400px" />
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/GStreamerPath.png" width="400px" />
 
