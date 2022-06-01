@@ -1,3 +1,6 @@
+#Foreword
+This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accomodate for RealSense, IP stream, and Raspi cam.
+
 # 3D-Printable Gaze-Tracking Glass Frames
 ![GithubPoster](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/GithubPoster.png)
 All parts of this frame should be printable with a normal 3D printer, such as an Ender3 with a 0.4mm nozzle.
@@ -7,7 +10,6 @@ Print at least 3 pins per eyecam, preferably a few more, in case some break.
 ![sepparateprints](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/SepparatePrint.png)
 
 # Software for gaze-tracking
-This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accomodate for RealSense, IP stream, and Raspi cam.
 
 This software aims to provide an easy-to-compile C++ implementation of a 3D eye-tracking method.
 
