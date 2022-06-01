@@ -5,8 +5,8 @@ This software aims to provide an easy-to-compile C++ implementation of a 3D eye-
 
 The software is designed for a 3-D printed wearable eye-tracking scnenario where a user wears a headset with an eye camera(s) that is equipped with infrared (IR) illuminations. The camera can capture close-up shots of the user's eyes.
 
-![GithubPoster](https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/Pictures/GithubPoster.png)
-  <img src="https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/Pictures/GithubPoster width="400px" />
+![GithubPoster](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/GithubPoster.png)
+
 
 With this software, you can obtain the following information:
 
@@ -67,8 +67,8 @@ To setup your own Visual Studio project, you need to use [CMake](https://cmake.o
 ## How to run
     
 ### For IP Stream
-		Set the IP of your camera stream at line 613
-        Make sure the bool streamcam at line 58 is true
+Set the IP of your camera stream at line 613
+Make sure the bool streamcam at line 58 is true
 
 ### For Webcams
 The default setting uses a sinlge camera via the DirectShow filter. Check your camera name on a video capture program (e.g., Skype) and set the name in `main.cpp`:
