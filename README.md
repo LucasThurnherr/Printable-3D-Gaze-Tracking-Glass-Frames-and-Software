@@ -1,2 +1,4 @@
-# Printable-3D-Gaze-Tracking-Glass-Frames-and-Software
-This solution provides a gaze-tracking solution combined with a forward-facing camera. The forward facing camera used for the code is a RealSense D435i, which can extract the depth of any given pixel. STL files to print glass frames to hold this camera and Raspi NoIR 2 cams facing the eyes are included to 3D print.
+Follow the instructions in "3D-Eye-Tracker-master\README.md"
+If the gaze tracker works with a webcam, it is ready to be converted to the extended gaze tracker
+Replace "3D-Eye-Tracker-master\main\main.cpp" with "main.cpp" in the start of the appendix
+RealSense and IP stream must be connected for this version to run
