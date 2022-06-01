@@ -5,7 +5,7 @@ This software aims to provide an easy-to-compile C++ implementation of a 3D eye-
 
 The software is designed for a 3-D printed wearable eye-tracking scnenario where a user wears a headset with an eye camera(s) that is equipped with infrared (IR) illuminations. The camera can capture close-up shots of the user's eyes.
 
-![headset_and_image](https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/tree/main/Pictures/GithubPoster)
+![GithubPoster](https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/tree/main/Pictures/GithubPoster)
 
 With this software, you can obtain the following information:
 
