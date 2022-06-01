@@ -1,0 +1,20 @@
+﻿  Source.cpp
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(201,40): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(211,43): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(220,54): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(220,49): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(247,40): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(247,40): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(247,50): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(247,50): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(262,87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\Depth Extractor Test\Source.cpp(262,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Depth Extractor Test.vcxproj -> C:\Users\Lucas\OneDrive - Syddansk Universitet\Bøger\6. Semester\Bachelor\Depth Extractor Test\x64\Debug\Depth Extractor Test.exe
