@@ -1,8 +1,10 @@
 # 3D-Printable Gaze-Tracking Glass Frames
-![sepparateprints](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/SepparatePrint.png)
+![GithubPoster](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/GithubPoster.png)
 All parts of this frame should be printable with a normal 3D printer, such as an Ender3 with a 0.4mm nozzle.
 The links are mirrorable, so print them twice if you want two eye cameras.
 Print at least 3 pins per eyecam, preferably a few more, in case some break.
+
+![sepparateprints](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/SepparatePrint.png)
 
 # Software for gaze-tracking
 This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accomodate for RealSense, IP stream, and Raspi cam.
@@ -11,7 +13,6 @@ This software aims to provide an easy-to-compile C++ implementation of a 3D eye-
 
 The software is designed for a 3-D printed wearable eye-tracking scnenario where a user wears a headset with an eye camera(s) that is equipped with infrared (IR) illuminations. The camera can capture close-up shots of the user's eyes.
 
-![GithubPoster](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/GithubPoster.png)
 
 
 With this software, you can obtain the following information:
