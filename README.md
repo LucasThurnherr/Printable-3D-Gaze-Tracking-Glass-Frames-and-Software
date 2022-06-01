@@ -1,5 +1,11 @@
-# Software for gaze-tracking software
-This REAMDE is a modified version of Yuta Itoh's README, changed to accomodate for RealSense, IP stream, and Raspi cam
+# 3D-Printable Gaze-Tracking Glass Frames
+![sepparateprints](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/SepparatePrint.png)
+All parts of this frame should be printable with a normal 3D printer, such as an Ender3 with a 0.4mm nozzle.
+The links are mirrorable, so print them twice if you want two eye cameras.
+Print at least 3 pins per eyecam, preferably a few more, in case some break.
+
+# Software for gaze-tracking
+This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accomodate for RealSense, IP stream, and Raspi cam.
 
 This software aims to provide an easy-to-compile C++ implementation of a 3D eye-tracking method.
 
@@ -41,8 +47,8 @@ install the following three libraries:
   * After installation, build the RealSense SDK for debug and release (x64)
 
   Make sure OpenCV, Boost, GStreamer, and RealSense SDK 2.0 are all inserted into your Environment variables and PATHS, as seen here: (Example seen in "Pics\install\GStreamerPath.png" and "Pics\install\PathExample.png")
-  <img src="https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/tree/main/Install/PathExample" width="400px" />
-  <img src="https://raw.githubusercontent.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/tree/main/Install/GStreamerPath" width="400px" />
+  <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/PathExample.png" width="400px" />
+  <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/GStreamerPath.png" width="400px" />
 To setup your own Visual Studio project, you need to use [CMake](https://cmake.org/). You can find a windows installer [here](https://cmake.org/download/).
  
 ## How to compile
@@ -63,6 +69,11 @@ To setup your own Visual Studio project, you need to use [CMake](https://cmake.o
 
   Make sure your additional dependencies looks similar to "Install\Additional Dependencies.txt"
   Make sure your additional include libraries looks similar to "Install\Additional Include Directories.txt" (May be smaller if you have opencv_world3416d.lib installed instead)
+
+### Post-Compilation
+If the gaze-tracker works with a webcam, it is ready to be converted to the extended gaze tracker.
+Replace "3D-Eye-Tracker-master\main\main.cpp" with "main.cpp" in the main repo.
+RealSense camera and IP stream must be connected to the program for this version to run.
 
 ## How to run
     
