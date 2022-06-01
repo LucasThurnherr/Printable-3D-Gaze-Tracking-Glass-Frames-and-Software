@@ -21,7 +21,7 @@ objpoints = [] # 3D points in real world space
 imgpoints = [] # 2D points in image plane
 
 # Make a list of calibration images
-fname = '/home/pi/Calibration-Pics/tesImage7.jpg' #Det her fungere kun ved ta blrive læst i cvtColor hvis det er hele pathen
+fname = '/home/pi/Calibration-Pics/tesImage7.jpg' #Taking the best picture resulting in the best mean error, which results in the best distortion coeff. and intrinsic matrix
 img = cv2.imread(fname)
 # Convert to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -37,20 +37,6 @@ if ret == True:
     cv2.imshow("Corners",img)
     cv2.waitKey(0)
 cv2.destroyAllWindows()
-'''
-#######Resizing Image#######
-    scale_percent = 60 # percent of original size
-    width = int(img.shape[1] * scale_percent / 100)
-    height = int(img.shape[0] * scale_percent / 100)
-    dim = (width, height)
-  
-# resize image
-    resized_Im = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
-############################
-
-    cv2.imshow("Corners",resized_Im)
-    '''
-
 
 h,w = img.shape[:2]
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
@@ -78,7 +64,7 @@ for i in range(len(objpoints)):
     mean_error += error
 print( "total error: {}".format(mean_error/len(objpoints)) )
 
-#Kilder
+#Sources for the camera calibration code:
 # https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
 # https://automaticaddison.com/how-to-perform-camera-calibration-using-opencv/
 # https://learnopencv.com/camera-calibration-using-opencv/
