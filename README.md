@@ -1,10 +1,12 @@
 # Foreword
 ![GithubPoster](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/GithubPoster.png)
-This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accomodate for RealSense, IP stream, and Raspi cam.
+This REAMDE is a modified version of Yuta Itoh's README [here](https://github.com/YutaItoh/3D-Eye-Tracker), changed to accommodate for RealSense, IP stream, and Raspi cam.
+
+Regarding the project's setup, it was situated at the home of one of the group members, primarily due to the impracticality of relocating the station. Consequently, all the code has been committed from their computer under the GitHub username (LucasThurnherr). It's worth noting that the co-collaborator (NikkieStella) has also been actively involved in the project, despite the primary commitment from one user.
 
 # 3D-Printable Gaze-Tracking Glass Frames
 All parts of this frame should be printable with a normal 3D printer, such as an Ender3 with a 0.4mm nozzle.
-The links are mirrorable, so print them twice if you want two eye cameras.
+The links are mirrorable, so print them twice if you want two-eye cameras.
 Print at least 3 pins per eyecam, preferably a few more, in case some break.
 
 ![sepparateprints](https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Pictures/SepparatePrint.png)
@@ -13,7 +15,7 @@ Print at least 3 pins per eyecam, preferably a few more, in case some break.
 
 This software aims to provide an easy-to-compile C++ implementation of a 3D eye-tracking method.
 
-The software is designed for a 3-D printed wearable eye-tracking scnenario where a user wears a headset with an eye camera(s) that is equipped with infrared (IR) illuminations. The camera can capture close-up shots of the user's eyes.
+The software is designed for a 3-D printed wearable eye-tracking scenario where a user wears a headset with an eye camera(s) that is equipped with infrared (IR) illuminations. The camera can capture close-up shots of the user's eyes.
 
 
 
@@ -34,7 +36,7 @@ With this software, you can obtain the following information:
 
 ## Prerequisite
 
-Currently, the software is compatible with Visual Studio 2019. The test was done on a 64bit Windows 10 machine only.
+Currently, the software is compatible with Visual Studio 2019. The test was done on a 64-bit Windows 10 machine only.
 
 Most of external libraries (for vc14, x64) are bundled in `./3D-Eye-Tracker-master.rar/external`, yet you still need to 
 install the following three libraries:
@@ -54,7 +56,7 @@ install the following three libraries:
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/PathExample.png" width="300px" />
   <img src="https://github.com/LucasThurnherr/Printable-3D-Gaze-Tracking-Glass-Frames-and-Software/blob/main/Install/GStreamerPath.png" width="400px" />
 
-  To setup your own Visual Studio project, you need to use [CMake](https://cmake.org/). You can find a windows installer [here](https://cmake.org/download/).
+  To setup your own Visual Studio project, you need to use [CMake](https://cmake.org/). You can find a Windows installer [here](https://cmake.org/download/).
  
 ## How to compile
 
@@ -67,7 +69,7 @@ install the following three libraries:
 4. Press `Generate` buttons, then choose a right build environment (Visual Studio 14 2015 Win64)
 <img src="https://raw.githubusercontent.com/YutaItoh/3D-Eye-Tracker/master/docs/cmake-2.png" width="300px" />
 <img src="https://raw.githubusercontent.com/YutaItoh/3D-Eye-Tracker/master/docs/cmake-3.png" width="600px" />
-5. Open `3d_eye_tracker.sln` in the build folder, and compile `main` project (recommend to set it as a startup project)
+5. Open `3d_eye_tracker.sln` in the build folder, and compile `main` project (recommend setting it as a startup project)
 <img src="https://raw.githubusercontent.com/YutaItoh/3D-Eye-Tracker/master/docs/setup-1.png" width="250px" />
 
   Copy "realsense2.dll" from {PATH}\librealsense-master\build\Release to the same folder as "main.cpp""
@@ -87,7 +89,7 @@ Set the IP of your camera stream at line 613
 Make sure the bool streamcam at line 58 is true
 
 ### For Webcams
-The default setting uses a sinlge camera via the DirectShow filter. Check your camera name on a video capture program (e.g., Skype) and set the name in `main.cpp`:
+The default setting uses a single camera via the DirectShow filter. Check your camera name on a video capture program (e.g., Skype) and set the name in `main.cpp`:
 ``` c++
 		case InputMode::CAMERA_MONO:
 			eyecams[0]=std::make_unique<eyecamera::EyeCameraDS>("Pupil Cam1 ID0");
@@ -102,7 +104,7 @@ In this case, the program tries to find a camera named `"Pupil Cam1 ID0"`.
 #### Building Eye Model
 Once the program is started, the eyecam is shown, so you can center your eye in the window
 Press 'g' when satisfied
-Once started, it initializes a 3D eye model from 2D pupil observatios:
+Once started, it initializes a 3D eye model from 2D pupil observations:
 
 <img src="https://raw.githubusercontent.com/YutaItoh/3D-Eye-Tracker/master/docs/runtime-2.png" width="600px" />
 
@@ -115,30 +117,30 @@ After the step, we get 3D eye tracking:
 #### Calibration
 When the eye model is built, a window showing the RealSense cam will appear
 There is a green square on the screen, look at the real-world equivalent of that point
-press 'h' to take a new RealSense snapshot, to ensure your head is steady
+Press 'h' to take a new RealSense snapshot, to ensure your head is steady
 When steady, press 'g' to move to the next state
-Take a new snapshot with 'h' to see in the square has moved
+Take a new snapshot with 'h' to see if the square has moved
 
 The next 8 states have green squares at different points
-Look at the real world equivalents of those points, as before
-press 'h' to take a new RealSense snapshot, to ensure your head is steady
+Look at the real-world equivalents of those points, as before
+Press 'h' to take a new RealSense snapshot, to ensure your head is steady
 When steady, press 'g' to move to the next state
-Take a new snapshot with 'h' to see in the square has moved
+Take a new snapshot with 'h' to see if the square has moved
 
 #### Running
 Once in calibState == 11, the calibration is done
-press 'h' to take a RealSense snapshot
-The RealSense window will display object detections squares, the user's gaze with a green square, and the closest object with its centerpoint in red
+Press 'h' to take a RealSense snapshot
+The RealSense window will display object detection squares, the user's gaze with a green square, and the closest object with its centerpoint in red
 The program's terminal will display the horizontal and vertical angles and the distance to the centerpoint of the object highlighted in red
 
 ### Tips:
 
-Some debug keys are pre-assigned for a better control of the software:
+Some debug keys are pre-assigned for better control of the software:
 * `p`: Takes some more 2D pupil observations. Useful when estimated 3D eye model is incorrect due to not-well-distributed 2D observations
 * `r`: Resets the 3D eye model and 2D observations and restarts the initialization step
 * `ESC`: Exit the program 	
 * 'h': Takes Realsense Snapshots
-* 'g': Moves the program to next calibration state
+* 'g': Moves the program to the next calibration state
 * 'f': Resets the calibration, but keeps the eye model
 
 # Acknowledgements
